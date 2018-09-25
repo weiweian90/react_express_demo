@@ -1,0 +1,34 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "globals": {
+        "__IS_SERVER__": true,
+        "__IS_CLIENT__": true,
+        "Promise": true,
+        "System": true
+    },
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "no-console": 1,
+        "semi": 2,
+        "react/no-did-mount-set-state": 0,
+        "react/prop-types": 0,
+        "react/display-name": 0,
+        "react/no-find-dom-node": 0,
+        "indent": ["error", 4]
+    },
+    "plugins": [
+        "react"
+    ]
+}
